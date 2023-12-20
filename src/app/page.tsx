@@ -83,14 +83,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 p-8 mt-32 xl:grid-cols-2 xl:w-[1280px] xl:mt-56  justify-between items-center m-auto">
-        <div className="order-2 sm:m-auto">
+      <div className="grid grid-cols-2 max-sm:grid-cols-1 p-8 mt-32 xl:grid-cols-2 lg:w-[1280px] lg:mt-56  justify-between items-center m-auto">
+        <div className="order-1 max-sm:order-2 max-sm:m-auto max-md:m-auto">
           <Image src={BusinessCasePng} alt="Business Case" />
         </div>
 
         <div
           id="functionality"
-          className="max-sm:w-[420px] max-md:w-[420px] m-auto order-1 lg:order-2 max-sm:text-center max-md:text-center"
+          className="m-auto order-1 lg:order-2 max-sm:text-center max-md:text-center"
         >
           <span className="text-2xl block">Funcionalidades</span>
           <h2 className="text-3xl lg:text-5xl mt-2 font-black text-primary">
@@ -105,7 +105,7 @@ export default function Home() {
 
       <div
         id="solutions"
-        className="lg:w-[1280px] max-sm:mt-32 max-md:mt-32 lg:mt-56 justify-center text-center items-center m-auto"
+        className="lg:w-[1280px] max-sm:mt-32 max-md:mt-32 mt-32 lg:mt-56 justify-center text-center items-center m-auto"
       >
         <div className="sm:w-[420px] xl:w-[620px] m-auto">
           <span className="text-2xl block">Ajustado para o seu negócio</span>
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 max-sm:grid-cols-4 max-sm:w-[520px] max-sm:m-auto max-md:m-auto w-[60%] lg:flex lg:m-auto mt-8 gap-2 p-8">
+      <div className="grid grid-cols-3 max-sm:grid-cols-3 max-sm:m-auto max-md:m-auto lg:w-[60%] m-auto lg:flex lg:m-auto mt-8 gap-2 p-8">
         <GadgetBusiness title="Barbearia" icon={Scissors} />
         <GadgetBusiness title="Salão de Beleza" icon={Waves} />
         <GadgetBusiness title="Estécica" icon={Smiley} />
@@ -127,7 +127,7 @@ export default function Home() {
 
       <div
         id="price"
-        className="xl:w-[1280px] justify-center text-center items-center m-auto mt-32 p-8"
+        className="xl:w-[1280px] justify-center text-center items-center m-auto mt-32 lg:mt-56 p-8"
       >
         <div className="sm:w-[420px] xl:w-[620px] m-auto">
           <h3 className="text-3xl xl:text-5xl font-black text-primary">
@@ -144,7 +144,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="xl:w-[1280px] mt-32 xl:mt-56 justify-center text-center items-center m-auto p-8">
+      <div className="xl:w-[1280px] mt-32 justify-center text-center items-center m-auto p-8">
         <div className="sm:w-[420px] xl:w-[620px] m-auto">
           <h3 className="text-3xl xl:text-5xl font-black text-primary">
             Sua empresa merece aquele potêncial de qualidade
