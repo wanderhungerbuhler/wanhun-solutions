@@ -10,31 +10,31 @@ type PlansProps = {
 
 export function Plans({ title, description, price, plan }: PlansProps) {
   return (
-    <div className="bg-white rounded-[10px] sm:w-[420px] xl:w-[420px] m-auto mt-9 p-8">
+    <div className="m-auto mt-9 rounded-[10px] bg-white p-8 sm:w-[420px] xl:w-[420px]">
       <div className="flex gap-3">
-        <div className="bg-secondary w-[90px] h-[90px] flex justify-center items-center rounded-[10px]">
+        <div className="flex h-[90px] w-[90px] items-center justify-center rounded-[10px] bg-secondary">
           {plan === 'basic' && <Package size={54} className="text-white" />}
           {plan === 'plus' && <SketchLogo size={54} className="text-white" />}
         </div>
 
         <div className="flex-1">
           <div>
-            <h3 className="text-primary text-start text-3xl font-black">
+            <h3 className="text-start text-3xl font-black text-primary">
               {title}
             </h3>
-            <p className="text-gray-300 text-sm xl:text-base text-start">
+            <p className="text-start text-sm text-gray-300 xl:text-base">
               {description}
             </p>
           </div>
         </div>
       </div>
 
-      <h4 className="text-primary mt-5 text-start font-black text-3xl">
+      <h4 className="mt-5 text-start text-3xl font-black text-primary">
         R$ {price}
         <span className="text-base font-semibold">/mês</span>
       </h4>
 
-      <div className="border mt-5 border-gray-100"></div>
+      <div className="mt-5 border border-gray-100"></div>
 
       {plan === 'basic' && (
         <>

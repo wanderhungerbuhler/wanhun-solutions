@@ -1,5 +1,4 @@
 import { IconProps } from '@phosphor-icons/react'
-import { title } from 'process'
 import { ReactNode } from 'react'
 
 export type IconBoxProps = (props: IconProps) => ReactNode
@@ -11,9 +10,9 @@ type GadgetBusiness = {
 
 export function GadgetBusiness({ icon: Icon, title }: GadgetBusiness) {
   return (
-    <div className="w-[100px] hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer h-[70px] flex flex-col gap-1 justify-center items-center m-auto bg-white rounded-[10px]">
+    <div className="m-auto flex h-[70px] w-[100px] cursor-pointer flex-col items-center justify-center gap-1 rounded-[10px] bg-white transition-all duration-300 ease-in-out hover:scale-110">
       {Icon && <Icon size={30} className="text-secondary" />}
-      <span className="text-secondary text-xs font-normal">{title}</span>
+      <span className="text-xs font-normal text-secondary">{title}</span>
     </div>
   )
 }
