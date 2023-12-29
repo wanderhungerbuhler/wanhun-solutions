@@ -5,16 +5,16 @@ type PlansProps = {
   title: string
   description: string
   price: string
-  plan: 'basic' | 'plus'
+  plan: 'basic' | 'premium'
 }
 
 export function Plans({ title, description, price, plan }: PlansProps) {
   return (
     <div className="m-auto mt-9 rounded-[10px] bg-white p-8 sm:w-[420px] xl:w-[420px]">
       <div className="flex gap-3">
-        <div className="flex h-[90px] w-[90px] items-center justify-center rounded-[10px] bg-secondary">
-          {plan === 'basic' && <Package size={54} className="text-white" />}
-          {plan === 'plus' && <SketchLogo size={54} className="text-white" />}
+        <div className={`flex h-[90px] w-[90px] items-center justify-center rounded-[10px] bg-secondary ${plan === 'basic' && 'bg-gray-100'}`}>
+          {plan === 'basic' && <Package size={54} className="text-gray-300" />}
+          {plan === 'premium' && <SketchLogo size={54} className="text-white" />}
         </div>
 
         <div className="flex-1">
@@ -39,14 +39,14 @@ export function Plans({ title, description, price, plan }: PlansProps) {
       {plan === 'basic' && (
         <>
           <DetailsPlan description="Marcações online" />
-          <DetailsPlan description="Marcações ilimitada" />
+          <DetailsPlan description="Marcações ilimitadas" />
           <DetailsPlan description="Lista de clientes" />
           <DetailsPlan description="Sem limites de profissionais" />
           <DetailsPlan description="Lembretes por e-amil" />
         </>
       )}
 
-      {plan === 'plus' && (
+      {plan === 'premium' && (
         <>
           <DetailsPlan description="Website da sua empresa" />
           <DetailsPlan description="Visibilidade no Google" />

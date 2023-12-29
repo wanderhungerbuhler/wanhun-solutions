@@ -101,8 +101,18 @@ export default function Home() {
           </h2>
           <p className="mb-5 mt-5 text-xl text-gray-300 xl:text-2xl">
             Faça a gestão dos seus agendamentos online, através do seu website
-            ou de onde aos seus clientes estiverem.
+            ou de onde os seus clientes estiverem.
           </p>
+          <div className="mt-4 flex gap-2 text-sm text-gray-300">
+            <p className="flex items-center gap-1">
+              <CheckCircle className="text-secondary" />
+              Calendário de agendamentos
+            </p>
+            <p className="flex items-center gap-1">
+              <CheckCircle className="text-secondary" />
+              Confirmação por e-mail
+            </p>
+          </div>
         </div>
       </div>
 
@@ -121,7 +131,7 @@ export default function Home() {
       <div className="m-auto mt-8 grid grid-cols-3 gap-2 p-8 max-md:m-auto max-sm:m-auto max-sm:grid-cols-3 lg:m-auto lg:flex lg:w-[60%]">
         <GadgetBusiness title="Barbearia" icon={Scissors} />
         <GadgetBusiness title="Salão de Beleza" icon={Waves} />
-        <GadgetBusiness title="Estécica" icon={Smiley} />
+        <GadgetBusiness title="Estética" icon={Smiley} />
         <GadgetBusiness title="Odonto" icon={Tooth} />
         <GadgetBusiness title="Psicologia" icon={Brain} />
         <GadgetBusiness title="Pets" icon={PawPrint} />
@@ -159,7 +169,7 @@ export default function Home() {
           description="Aumente as funcionalidades 
           da sua empresa"
           price="25"
-          plan="plus"
+          plan="premium"
         />
       </div>
     </div>
