@@ -1,4 +1,4 @@
-import { IconBoxProps } from '@/app/components/GadgetBusiness'
+import { IconBoxProps } from '@/components/GadgetBusiness'
 
 type CallToActions = {
   icon: IconBoxProps

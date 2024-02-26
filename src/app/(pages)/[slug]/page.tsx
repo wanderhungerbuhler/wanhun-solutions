@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import { MapsWidgets } from './components/MapsWidgets'
+// import { MapsWidgets } from './components/MapsWidgets'
 import { BtnActionsWidgets } from './components/BtnActionsWidgets'
 import { ProfileWidgets } from './components/ProfileWidgets'
 import { HeaderWidgets } from './components/HeaderWidgets'
@@ -64,7 +64,7 @@ export default function Pages({ params }: PagesProps) {
 
           <div className="flex flex-col gap-3">
             <BtnActionsWidgets />
-            <MapsWidgets />
+            {/* <MapsWidgets /> */}
           </div>
         </div>
       </div>

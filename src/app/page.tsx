@@ -12,37 +12,37 @@ import {
   Waves,
 } from '@phosphor-icons/react'
 
-import '@/app/styles/global.css'
+import '@/styles/global.css'
 
-import LogoSvg from '@/app/assets/logo.svg'
-import BannerCalendarSvg from '@/app/assets/banner-calendar.svg'
-import BusinessCasePng from '@/app/assets/business-case.svg'
-import { GadgetBusiness } from './components/GadgetBusiness'
-import { Plans } from './components/Plans'
-import { ButtonLanguages } from './components/ButtonLanguages'
+import LogoWhiteSvg from '@/assets/logo-white.svg'
+import BannerCalendarSvg from '@/assets/banner-calendar.svg'
+import BusinessCasePng from '@/assets/business-case.png'
+import { GadgetBusiness } from '../components/GadgetBusiness'
+import { Plans } from '../components/Plans'
+import { ButtonLanguages } from '../components/ButtonLanguages'
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-primary">
       <div className="m-auto flex items-center justify-between gap-5 p-4 max-sm:flex max-sm:flex-col lg:w-[1280px]">
-        <Image src={LogoSvg} alt="Logo - WANHUN Solutions" />
+        <Image src={LogoWhiteSvg} alt="Logo - WANHUN Solutions" />
 
         <ul className="flex gap-5 text-base font-normal max-md:mt-5 max-sm:mt-5">
           <Link
             href="#functionality"
-            className="transition-all duration-300 ease-linear hover:text-secondary"
+            className="text-white transition-all duration-300 ease-linear hover:text-secondary"
           >
             Funcionalidades
           </Link>
           <Link
             href="#solutions"
-            className="transition-all duration-300 ease-linear hover:text-secondary"
+            className="text-white transition-all duration-300 ease-linear hover:text-secondary"
           >
             Soluções
           </Link>
           <Link
             href="#price"
-            className="transition-all duration-300 ease-linear hover:text-secondary"
+            className="text-white transition-all duration-300 ease-linear hover:text-secondary"
           >
             Preço
           </Link>
@@ -53,10 +53,10 @@ export default function Home() {
 
       <div className="m-auto grid grid-cols-2 justify-between p-8 max-md:grid-cols-1 max-md:items-center max-sm:grid-cols-1 max-sm:items-center lg:w-[1280px]">
         <div className="flex flex-col justify-center max-md:items-center max-sm:items-center lg:w-[429px]">
-          <h1 className="text-5xl font-black text-primary max-md:text-center max-sm:text-center">
+          <h1 className="text-5xl font-black text-white max-md:text-center max-sm:text-center">
             Software de gestão para agendamentos
           </h1>
-          <p className="mt-5 text-2xl text-gray-300 max-md:text-center max-sm:text-center">
+          <p className="mt-5 text-2xl text-gray-400 max-md:text-center max-sm:text-center">
             Cuide dos seus clientes enquanto organizamos a agenda da sua
             empresa.
           </p>
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="m-auto mt-32 grid grid-cols-2 items-center justify-between p-8 max-sm:grid-cols-1  lg:mt-56 lg:w-[1280px] xl:grid-cols-2">
+      <div className="m-auto mt-32 grid grid-cols-2 items-center justify-between gap-5 p-8 max-sm:grid-cols-1 lg:mt-56 lg:w-[1280px] xl:grid-cols-2">
         <div className="order-1 max-md:m-auto max-sm:order-2 max-sm:m-auto">
           <Image src={BusinessCasePng} alt="Business Case" />
         </div>
@@ -95,11 +95,11 @@ export default function Home() {
           id="functionality"
           className="order-1 m-auto max-md:text-center max-sm:text-center lg:order-2"
         >
-          <span className="block text-2xl">Funcionalidades</span>
-          <h2 className="mt-2 text-3xl font-black text-primary lg:text-5xl">
+          <span className="block text-2xl text-white">Funcionalidades</span>
+          <h2 className="mt-2 text-3xl font-black text-white lg:text-5xl">
             Os clientes fazem o agendamento de forma fácil
           </h2>
-          <p className="mb-5 mt-5 text-xl text-gray-300 xl:text-2xl">
+          <p className="mb-5 mt-5 text-xl text-gray-400 xl:text-2xl">
             Faça a gestão dos seus agendamentos online, através do seu website
             ou de onde os seus clientes estiverem.
           </p>
@@ -121,8 +121,10 @@ export default function Home() {
         className="m-auto mt-32 items-center justify-center text-center max-md:mt-32 max-sm:mt-32 lg:mt-56 lg:w-[1280px]"
       >
         <div className="m-auto sm:w-[420px] xl:w-[620px]">
-          <span className="block text-2xl">Ajustado para o seu negócio</span>
-          <h3 className="mt-2 text-3xl font-black text-primary xl:text-5xl">
+          <span className="block text-2xl text-white">
+            Ajustado para o seu negócio
+          </span>
+          <h3 className="mt-2 text-3xl font-black text-white xl:text-5xl">
             Uma solução para todos os empreendimentos
           </h3>
         </div>
@@ -143,7 +145,7 @@ export default function Home() {
         className="m-auto mt-32 items-center justify-center p-8 text-center lg:mt-56 xl:w-[1280px]"
       >
         <div className="m-auto sm:w-[420px] xl:w-[620px]">
-          <h3 className="text-3xl font-black text-primary xl:text-5xl">
+          <h3 className="text-3xl font-black text-white xl:text-5xl">
             O melhor sistema de forma{' '}
             <span className="text-secondary">gratuita</span> para o seu projeto
           </h3>
@@ -159,8 +161,9 @@ export default function Home() {
 
       <div className="m-auto mt-32 items-center justify-center p-8 text-center xl:w-[1280px]">
         <div className="m-auto sm:w-[420px] xl:w-[620px]">
-          <h3 className="text-3xl font-black text-primary xl:text-5xl">
-            Sua empresa merece aquele potêncial de qualidade
+          <h3 className="text-3xl font-black text-white xl:text-5xl">
+            Sua <span className="text-secondary">empresa</span> merece aquele
+            potêncial de qualidade
           </h3>
         </div>
 
@@ -168,7 +171,7 @@ export default function Home() {
           title="Plus"
           description="Aumente as funcionalidades 
           da sua empresa"
-          price="25"
+          price="27,90"
           plan="premium"
         />
       </div>

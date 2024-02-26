@@ -12,9 +12,13 @@ export function Plans({ title, description, price, plan }: PlansProps) {
   return (
     <div className="m-auto mt-9 rounded-[10px] bg-white p-8 sm:w-[420px] xl:w-[420px]">
       <div className="flex gap-3">
-        <div className={`flex h-[90px] w-[90px] items-center justify-center rounded-[10px] bg-secondary ${plan === 'basic' && 'bg-gray-100'}`}>
-          {plan === 'basic' && <Package size={54} className="text-gray-300" />}
-          {plan === 'premium' && <SketchLogo size={54} className="text-white" />}
+        <div
+          className={`flex h-[90px] w-[90px] items-center justify-center rounded-[10px] bg-secondary ${plan === 'basic' && 'bg-gray-100'}`}
+        >
+          {plan === 'basic' && <Package size={54} className="text-white" />}
+          {plan === 'premium' && (
+            <SketchLogo size={54} className="text-white" />
+          )}
         </div>
 
         <div className="flex-1">

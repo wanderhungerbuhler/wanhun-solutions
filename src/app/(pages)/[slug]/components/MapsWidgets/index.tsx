@@ -1,6 +1,5 @@
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api'
-import Image from 'next/image'
-import { GoogleMapsOptions } from '@/app/utils/maps'
+import { GoogleMapsOptions } from '@/utils/maps'
 
 export function MapsWidgets() {
   const { isLoaded } = useJsApiLoader({
