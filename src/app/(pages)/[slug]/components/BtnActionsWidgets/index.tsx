@@ -23,7 +23,7 @@ const Calendar = () => {
     })()
   }, [])
   return (
-    <div className="fixed inset-0 m-auto flex h-[50%] w-[50%] flex-col items-center justify-center rounded-lg bg-white shadow-lg">
+    <div className="fixed inset-0 z-50 m-auto flex hidden h-[50%] w-[50%] flex-col items-center justify-center rounded-lg bg-white shadow-lg">
       <label className="relative cursor-pointer">
         <input
           type="checkbox"

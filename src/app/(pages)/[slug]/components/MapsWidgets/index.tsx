@@ -15,7 +15,7 @@ export function MapsWidgets() {
   return (
     <div className="mt-9">
       <h3 className="text-2xl font-black text-primary">Localização</h3>
-      <div className="mt-2 h-[215px] rounded-[10px] bg-white">
+      <div className="mt-2 h-[215px] overflow-hidden rounded-[10px] bg-white">
         {isLoaded ? (
           <GoogleMap
             mapContainerStyle={{ width: '100%', height: '100%' }}

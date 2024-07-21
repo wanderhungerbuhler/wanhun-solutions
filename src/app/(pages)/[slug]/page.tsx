@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-// import { MapsWidgets } from './components/MapsWidgets'
+import { MapsWidgets } from './components/MapsWidgets'
 import { BtnActionsWidgets } from './components/BtnActionsWidgets'
 import { ProfileWidgets } from './components/ProfileWidgets'
 import { HeaderWidgets } from './components/HeaderWidgets'
@@ -17,7 +17,7 @@ export default function Pages({ params }: PagesProps) {
   const db = 'aveirosbarbershop'
 
   return params.slug === db ? (
-    <div className="w-full">
+    <div className="w-full bg-gray-100">
       <HeaderWidgets />
       <div className="relative m-auto mt-16 flex h-[380px] grid-cols-3 gap-2 overflow-hidden lg:w-[1024px]">
         <div className="relative flex h-full w-full cursor-pointer overflow-hidden md:rounded-lg">
@@ -64,7 +64,7 @@ export default function Pages({ params }: PagesProps) {
 
           <div className="flex flex-col gap-3">
             <BtnActionsWidgets />
-            {/* <MapsWidgets /> */}
+            <MapsWidgets />
           </div>
         </div>
       </div>
